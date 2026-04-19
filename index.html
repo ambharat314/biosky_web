@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioSky — Space-Powered Energy Intelligence</title>
+  <meta name="description" content="BioSky Space Innovations builds AI and satellite-powered solutions for renewable energy forecasting, grid intelligence, and climate analytics.">
+  <meta name="keywords" content="spacetech, clean-tech, AI, satellite imagery, renewable energy, grid intelligence, climate analytics">
+  <meta name="author" content="BioSky Space Innovations Pvt. Ltd.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+          <ellipse cx="16" cy="16" rx="8" ry="14" stroke="currentColor" stroke-width="1"/>
+          <ellipse cx="16" cy="16" rx="14" ry="8" stroke="currentColor" stroke-width="1"/>
+          <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>BioSky</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#platform" class="nav-link">Platform</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#use-cases" class="nav-link">Use Cases</a>
+        <a href="#impact" class="nav-link">Impact</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#contact" class="nav-link nav-link-cta">Get in Touch</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Space-Powered Intelligence
+      </div>
+      <h1 class="hero-title">
+        Reimagining Energy<br>Intelligence from Space
+      </h1>
+      <p class="hero-subtitle">
+        AI + satellite-powered solutions for renewable energy forecasting,<br class="hide-mobile">
+        grid intelligence, and climate analytics.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get a Demo</a>
+        <a href="#platform" class="btn btn-secondary">Explore Platform
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="section-label">About BioSky</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Building the intelligence layer<br>between space and energy.</h2>
+          <p class="about-description">
+            BioSky Space Innovations Pvt. Ltd. is an India-based spacetech startup using AI, satellite imagery, and Earth intelligence to transform the energy sector — enabling a clean, reliable, and climate-resilient future.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="mission-card reveal-item">
+            <div class="mission-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M24 4V24L36 36" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Mission</h3>
+            <p>To build a space-powered energy intelligence layer for a clean, reliable, and climate-resilient future.</p>
+          </div>
+          <div class="mission-card reveal-item">
+            <div class="mission-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Vision</h3>
+            <p>To become a global leader in spacetech-driven sustainability solutions.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Satellite illustration -->
+      <div class="about-illustration">
+        <svg viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-svg">
+          <line x1="0" y1="180" x2="800" y2="180" stroke="#e5e7eb" stroke-width="0.5"/>
+          <!-- Earth horizon curve -->
+          <path d="M0 180 Q400 120 800 180" stroke="#d1d5db" stroke-width="1" fill="none"/>
+          <!-- Detailed Satellite -->
+          <g class="satellite-float" transform="translate(380, 40)">
+            <!-- Solar Array Left -->
+            <rect x="-35" y="-3" width="22" height="6" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156, 163, 175, 0.1)"/>
+            <line x1="-24" y1="-3" x2="-24" y2="3" stroke="#9ca3af" stroke-width="0.5"/>
+            <line x1="-19" y1="-3" x2="-19" y2="3" stroke="#9ca3af" stroke-width="0.5"/>
+            <!-- Solar Array Right -->
+            <rect x="13" y="-3" width="22" height="6" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156, 163, 175, 0.1)"/>
+            <line x1="19" y1="-3" x2="19" y2="3" stroke="#9ca3af" stroke-width="0.5"/>
+            <line x1="24" y1="-3" x2="24" y2="3" stroke="#9ca3af" stroke-width="0.5"/>
+            <!-- Core Body -->
+            <rect x="-8" y="-6" width="16" height="12" rx="1" stroke="#374151" stroke-width="1.2" fill="#ffffff"/>
+            <rect x="-4" y="-2" width="8" height="4" stroke="#d1d5db" stroke-width="0.8"/>
+            <line x1="-13" y1="0" x2="-8" y2="0" stroke="#9ca3af" stroke-width="1"/>
+            <line x1="8" y1="0" x2="13" y2="0" stroke="#9ca3af" stroke-width="1"/>
+            <!-- Antenna / Dish -->
+            <path d="M-2 -6 L-4 -12 A6 6 0 0 1 4 -12 L2 -6" stroke="#9ca3af" stroke-width="1" fill="none"/>
+            <circle cx="0" cy="-14" r="1.5" fill="#374151"/>
+            <!-- Sensors -->
+            <path d="M-3 6 L-3 10 M3 6 L3 8" stroke="#9ca3af" stroke-width="1"/>
+            <!-- Signal waves -->
+            <path d="M0 12 Q-10 25 -20 45" stroke="#d1d5db" stroke-width="0.6" fill="none" stroke-dasharray="3 3"/>
+            <path d="M0 12 Q10 25 20 45" stroke="#d1d5db" stroke-width="0.6" fill="none" stroke-dasharray="3 3"/>
+            <path d="M0 12 L0 45" stroke="#d1d5db" stroke-width="0.6" fill="none" stroke-dasharray="3 3"/>
+          </g>
+          <!-- Data points on curve -->
+          <circle cx="200" cy="158" r="2" fill="#9ca3af"/>
+          <circle cx="350" cy="135" r="2" fill="#9ca3af"/>
+          <circle cx="500" cy="140" r="2" fill="#9ca3af"/>
+          <circle cx="650" cy="155" r="2" fill="#9ca3af"/>
+          <!-- Detailed Solar panels on ground -->
+          <g transform="translate(180, 165)">
+            <g transform="translate(0, 0)">
+              <rect x="0" y="-8" width="14" height="8" rx="0.5" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156,163,175,0.1)" transform="rotate(-15)"/>
+              <line x1="2" y1="-8" x2="10" y2="5" stroke="#d1d5db" stroke-width="0.5"/>
+              <path d="M8 0 L8 5 M4 5 L12 5" stroke="#9ca3af" stroke-width="1"/>
+            </g>
+            <g transform="translate(20, 0)">
+              <rect x="0" y="-8" width="14" height="8" rx="0.5" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156,163,175,0.1)" transform="rotate(-15)"/>
+              <line x1="2" y1="-8" x2="10" y2="5" stroke="#d1d5db" stroke-width="0.5"/>
+              <path d="M8 0 L8 5 M4 5 L12 5" stroke="#9ca3af" stroke-width="1"/>
+            </g>
+          </g>
+          <!-- Detailed Wind turbine -->
+          <g transform="translate(600, 140)">
+            <path d="M-1.5 38 L1.5 38 L0.5 0 L-0.5 0 Z" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156, 163, 175, 0.05)"/>
+            <circle cx="0" cy="0" r="2" fill="#374151"/>
+            <path d="M0 0 C -3 -10, -5 -16, 0 -18 C -1 -10, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156, 163, 175, 0.1)" transform="rotate(0)"/>
+            <path d="M0 0 C -3 -10, -5 -16, 0 -18 C -1 -10, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156, 163, 175, 0.1)" transform="rotate(120)"/>
+            <path d="M0 0 C -3 -10, -5 -16, 0 -18 C -1 -10, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156, 163, 175, 0.1)" transform="rotate(240)"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATFORM ===== -->
+  <section class="section section-platform" id="platform">
+    <div class="container">
+      <div class="section-label">Platform & Technology</div>
+      <h2 class="section-title center">From orbit to insight.<br>A unified intelligence pipeline.</h2>
+      <p class="section-desc center">Our platform transforms raw satellite data into actionable energy intelligence through a seamless AI-driven pipeline.</p>
+
+      <div class="pipeline">
+        <div class="pipeline-step reveal-item">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <!-- Detailed Pipeline: Satellite -->
+              <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="1"/>
+              <!-- Grid lines on earth -->
+              <path d="M14 32 Q32 40 50 32 M14 32 Q32 24 50 32" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.5"/>
+              <path d="M32 14 Q24 32 32 50 M32 14 Q40 32 32 50" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.5"/>
+              <!-- Orbit -->
+              <ellipse cx="32" cy="32" rx="10" ry="22" stroke="currentColor" stroke-width="0.8" transform="rotate(45 32 32)" stroke-dasharray="2 2"/>
+              <!-- Satellite -->
+              <g transform="translate(18, 12) rotate(45)">
+                <rect x="-4" y="-1" width="8" height="2" fill="currentColor"/>
+                <rect x="-1" y="-3" width="2" height="6" fill="#ffffff" stroke="currentColor" stroke-width="0.5"/>
+                <line x1="0" y1="3" x2="0" y2="6" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="0" cy="6" r="1" fill="currentColor"/>
+              </g>
+            </svg>
+          </div>
+          <h4>Satellite</h4>
+          <p>Earth observation & imagery</p>
+        </div>
+        <div class="pipeline-arrow">
+          <svg viewBox="0 0 40 16" fill="none"><path d="M0 8H32M32 8L26 3M32 8L26 13" stroke="#9ca3af" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pipeline-step reveal-item">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <!-- Detailed Pipeline: Data -->
+              <rect x="14" y="16" width="36" height="32" rx="3" stroke="currentColor" stroke-width="1" fill="rgba(255,255,255,0.05)"/>
+              <line x1="14" y1="24" x2="50" y2="24" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="20" cy="20" r="1" fill="currentColor"/>
+              <circle cx="24" cy="20" r="1" fill="currentColor"/>
+              <circle cx="28" cy="20" r="1" fill="currentColor"/>
+              <!-- Data Bars -->
+              <rect x="20" y="32" width="16" height="2" rx="1" fill="currentColor" opacity="0.8"/>
+              <rect x="20" y="38" width="24" height="2" rx="1" fill="currentColor" opacity="0.5"/>
+              <rect x="20" y="44" width="10" height="2" rx="1" fill="currentColor" opacity="0.3"/>
+              <!-- Connection Node -->
+              <path d="M42 32 L46 32 L46 44 L42 44" stroke="currentColor" stroke-width="0.8" fill="none"/>
+              <circle cx="46" cy="38" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4>Data</h4>
+          <p>Ingestion & processing</p>
+        </div>
+        <div class="pipeline-arrow">
+          <svg viewBox="0 0 40 16" fill="none"><path d="M0 8H32M32 8L26 3M32 8L26 13" stroke="#9ca3af" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pipeline-step reveal-item">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <!-- Detailed Pipeline: AI Network -->
+              <!-- Nodes -->
+              <circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1" fill="none"/>
+              <circle cx="20" cy="44" r="3" stroke="currentColor" stroke-width="1" fill="none"/>
+              <circle cx="32" cy="32" r="4" fill="currentColor"/>
+              <circle cx="44" cy="20" r="3" stroke="currentColor" stroke-width="1" fill="none"/>
+              <circle cx="44" cy="44" r="3" stroke="currentColor" stroke-width="1" fill="none"/>
+              <circle cx="32" cy="16" r="2" fill="currentColor" opacity="0.5"/>
+              <circle cx="32" cy="48" r="2" fill="currentColor" opacity="0.5"/>
+              <!-- Connections -->
+              <path d="M22 22 L29 29 M22 42 L29 35 M42 22 L35 29 M42 42 L35 35" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M22 20 L29 17 M42 20 L35 17 M22 44 L29 47 M42 44 L35 47" stroke="currentColor" stroke-width="0.4" opacity="0.5"/>
+              <path d="M20 23 L20 41 M44 23 L44 41" stroke="currentColor" stroke-width="0.2" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+          <h4>AI</h4>
+          <p>Machine learning models</p>
+        </div>
+        <div class="pipeline-arrow">
+          <svg viewBox="0 0 40 16" fill="none"><path d="M0 8H32M32 8L26 3M32 8L26 13" stroke="#9ca3af" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pipeline-step reveal-item">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <!-- Detailed Pipeline: Insights -->
+              <rect x="14" y="16" width="36" height="32" rx="2" stroke="currentColor" stroke-width="1" fill="none"/>
+              <path d="M14 24 L50 24" stroke="currentColor" stroke-width="0.5"/>
+              <!-- Chart Bars -->
+              <rect x="18" y="34" width="4" height="10" rx="1" fill="currentColor" opacity="0.3"/>
+              <rect x="25" y="28" width="4" height="16" rx="1" fill="currentColor" opacity="0.5"/>
+              <rect x="32" y="22" width="4" height="22" rx="1" fill="currentColor" opacity="0.8"/>
+              <rect x="39" y="30" width="4" height="14" rx="1" fill="currentColor" opacity="0.4"/>
+              <!-- Trend Line -->
+              <path d="M20 30 L27 24 L34 18 L41 26" stroke="currentColor" stroke-width="1" fill="none"/>
+              <circle cx="34" cy="18" r="2" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+          <h4>Insights</h4>
+          <p>Actionable analytics</p>
+        </div>
+        <div class="pipeline-arrow">
+          <svg viewBox="0 0 40 16" fill="none"><path d="M0 8H32M32 8L26 3M32 8L26 13" stroke="#9ca3af" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="pipeline-step reveal-item">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <!-- Detailed Pipeline: Decisions -->
+              <!-- Outer rings -->
+              <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 3"/>
+              <circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="1"/>
+              <!-- Core Checkmark -->
+              <path d="M24 32L29 37L40 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Orbiting elements -->
+              <circle cx="32" cy="12" r="2" fill="currentColor"/>
+              <circle cx="52" cy="32" r="2" fill="currentColor" opacity="0.5"/>
+              <circle cx="12" cy="32" r="2" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <h4>Decisions</h4>
+          <p>Optimized operations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTIONS ===== -->
+  <section class="section section-solutions" id="solutions">
+    <div class="container">
+      <div class="section-label">Solutions</div>
+      <h2 class="section-title">Intelligence for every layer<br>of the energy ecosystem.</h2>
+
+      <div class="solutions-grid">
+        <div class="solution-card reveal-item">
+          <div class="solution-number">01</div>
+          <div class="solution-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <!-- Detailed Solution 1: Forecasting -->
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1" fill="rgba(255,255,255,0.05)"/>
+              <path d="M24 10 V24 L34 34" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+              <!-- Dynamic Rays -->
+              <line x1="24" y1="2" x2="24" y2="6" stroke="currentColor" stroke-width="1"/>
+              <line x1="24" y1="42" x2="24" y2="46" stroke="currentColor" stroke-width="1"/>
+              <line x1="2" y1="24" x2="6" y2="24" stroke="currentColor" stroke-width="1"/>
+              <line x1="42" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="1"/>
+              <line x1="8" y1="8" x2="11" y2="11" stroke="currentColor" stroke-width="0.5"/>
+              <line x1="40" y1="40" x2="37" y2="37" stroke="currentColor" stroke-width="0.5"/>
+              <!-- Forecast Graph -->
+              <path d="M4 42 Q12 30 18 36 Q24 42 30 28 Q36 14 44 20" stroke="currentColor" stroke-width="1" fill="none" stroke-dasharray="2 2" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3>Energy Forecasting</h3>
+          <p>AI-powered renewable energy forecasting using satellite weather data with unprecedented accuracy for solar and wind assets.</p>
+        </div>
+
+        <div class="solution-card reveal-item">
+          <div class="solution-number">02</div>
+          <div class="solution-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <!-- Detailed Solution 2: Grid Intelligence -->
+              <!-- Hexagon Structure -->
+              <path d="M24 6 L40 15 L40 33 L24 42 L8 33 L8 15 Z" stroke="currentColor" stroke-width="1" fill="none"/>
+              <path d="M24 6 L24 24 M40 15 L24 24 M40 33 L24 24 M24 42 L24 24 M8 33 L24 24 M8 15 L24 24" stroke="currentColor" stroke-width="0.5" opacity="0.6"/>
+              <!-- Nodes -->
+              <circle cx="24" cy="6" r="2.5" fill="currentColor"/>
+              <circle cx="40" cy="15" r="2.5" fill="currentColor"/>
+              <circle cx="40" cy="33" r="2.5" fill="currentColor"/>
+              <circle cx="24" cy="42" r="2.5" fill="currentColor"/>
+              <circle cx="8" cy="33" r="2.5" fill="currentColor"/>
+              <circle cx="8" cy="15" r="2.5" fill="currentColor"/>
+              <circle cx="24" cy="24" r="4" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Grid Intelligence</h3>
+          <p>Real-time monitoring and predictive analytics for transmission and distribution grids, reducing outage risk and improving reliability.</p>
+        </div>
+
+        <div class="solution-card reveal-item">
+          <div class="solution-number">03</div>
+          <div class="solution-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <!-- Detailed Solution 3: Climate Analytics -->
+              <!-- Abstract Earth/Weather -->
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1" fill="none" stroke-dasharray="8 4"/>
+              <!-- Cloud -->
+              <path d="M16 28 Q16 22 22 22 Q22 16 30 16 Q38 16 38 24 Q42 24 42 28 Q42 32 38 32 H16 Q12 32 12 28 Z" fill="rgba(255,255,255,0.1)" stroke="currentColor" stroke-width="1"/>
+              <!-- Precipitation / Data -->
+              <line x1="18" y1="35" x2="16" y2="40" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              <line x1="24" y1="35" x2="22" y2="42" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              <line x1="30" y1="35" x2="28" y2="40" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              <line x1="36" y1="35" x2="34" y2="38" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              <!-- Data nodes -->
+              <circle cx="30" cy="18" r="1.5" fill="currentColor"/>
+              <circle cx="36" cy="22" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Climate Analytics</h3>
+          <p>Weather and climate intelligence combining satellite observations with AI models for risk assessment and long-term planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section section-how" id="how-it-works">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title center">From space to decision.<br>Four seamless steps.</h2>
+
+      <div class="steps-timeline">
+        <div class="timeline-line"></div>
+
+        <div class="step-item reveal-item">
+          <div class="step-marker">
+            <span>1</span>
+          </div>
+          <div class="step-content">
+            <div class="step-illustration">
+              <svg viewBox="0 0 120 80" fill="none">
+                <!-- Detailed Step 1: Observe -->
+                <!-- Earth Curve -->
+                <path d="M10 80 Q60 50 110 80" stroke="#d1d5db" stroke-width="1" fill="rgba(156,163,175,0.05)"/>
+                <!-- Global Grid -->
+                <path d="M35 65 L35 80 M60 55 L60 80 M85 65 L85 80" stroke="#d1d5db" stroke-width="0.5" stroke-dasharray="2 2"/>
+                <path d="M20 70 Q60 60 100 70" stroke="#d1d5db" stroke-width="0.5"/>
+                <!-- Satellite Platform -->
+                <g class="satellite-float" transform="translate(60, 20)">
+                  <rect x="-8" y="-3" width="16" height="6" rx="1" stroke="#374151" stroke-width="1" fill="#ffffff"/>
+                  <path d="M-2 -3 L-2 -8 M2 -3 L2 -8" stroke="#9ca3af" stroke-width="1"/>
+                  <rect x="-4" y="-10" width="8" height="2" fill="#9ca3af"/>
+                  <rect x="-24" y="-2" width="14" height="4" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156,163,175,0.2)"/>
+                  <rect x="10" y="-2" width="14" height="4" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156,163,175,0.2)"/>
+                  <line x1="-17" y1="-2" x2="-17" y2="2" stroke="#9ca3af" stroke-width="0.5"/>
+                  <line x1="17" y1="-2" x2="17" y2="2" stroke="#9ca3af" stroke-width="0.5"/>
+                  <path d="M0 3 L-6 12 M0 3 L6 12" stroke="#d1d5db" stroke-width="0.5" stroke-dasharray="2 2"/>
+                </g>
+              </svg>
+            </div>
+            <h3>Observe</h3>
+            <p>Satellites capture Earth observation data — solar irradiance, cloud cover, atmospheric conditions, and surface temperatures across target regions.</p>
+          </div>
+        </div>
+
+        <div class="step-item step-item-right reveal-item">
+          <div class="step-marker">
+            <span>2</span>
+          </div>
+          <div class="step-content">
+            <div class="step-illustration">
+              <svg viewBox="0 0 120 80" fill="none">
+                <!-- Detailed Step 2: Process (Data Stream) -->
+                <rect x="15" y="15" width="35" height="50" rx="2" stroke="#9ca3af" stroke-width="1" fill="rgba(156,163,175,0.05)"/>
+                <rect x="70" y="25" width="35" height="30" rx="2" stroke="#374151" stroke-width="1" fill="#ffffff"/>
+                <!-- Server Racks / Data Blocks inside Process -->
+                <line x1="20" y1="22" x2="45" y2="22" stroke="#d1d5db" stroke-width="1.5"/>
+                <line x1="20" y1="30" x2="40" y2="30" stroke="#d1d5db" stroke-width="1.5"/>
+                <line x1="20" y1="38" x2="45" y2="38" stroke="#d1d5db" stroke-width="1.5"/>
+                <line x1="20" y1="46" x2="35" y2="46" stroke="#d1d5db" stroke-width="1.5"/>
+                <!-- Network / Transfer Lines -->
+                <path d="M50 30 L60 30 L65 35 L70 35" stroke="#374151" stroke-width="1" fill="none"/>
+                <path d="M50 50 L60 50 L65 45 L70 45" stroke="#374151" stroke-width="1" fill="none"/>
+                <!-- Pulse Nodes -->
+                <circle cx="60" cy="30" r="1.5" fill="#374151" class="pulse-dot"/>
+                <circle cx="60" cy="50" r="1.5" fill="#374151" class="pulse-dot"/>
+                <!-- Cleaned Database Core -->
+                <path d="M75 35 Q87 30 100 35 L100 45 Q87 50 75 45 Z" stroke="#374151" stroke-width="1" fill="none"/>
+                <path d="M75 40 Q87 45 100 40" stroke="#374151" stroke-width="0.5" fill="none"/>
+                <circle cx="87.5" cy="40" r="2" fill="#9ca3af"/>
+              </svg>
+            </div>
+            <h3>Process</h3>
+            <p>Raw data is ingested and processed through our cloud infrastructure, cleaning, normalizing, and structuring it for AI model consumption.</p>
+          </div>
+        </div>
+
+        <div class="step-item reveal-item">
+          <div class="step-marker">
+            <span>3</span>
+          </div>
+          <div class="step-content">
+            <div class="step-illustration">
+              <svg viewBox="0 0 120 80" fill="none">
+                <!-- Detailed Step 3: Analyze (AI Mind) -->
+                <!-- Central Node -->
+                <circle cx="60" cy="40" r="12" stroke="#374151" stroke-width="1" fill="rgba(255,255,255,0.8)"/>
+                <circle cx="60" cy="40" r="4" fill="#374151"/>
+                <circle cx="60" cy="40" r="20" stroke="#d1d5db" stroke-width="0.5" stroke-dasharray="4 2" fill="none"/>
+                <!-- Outer Nodes -->
+                <circle cx="30" cy="20" r="4" stroke="#9ca3af" stroke-width="1" fill="#ffffff"/>
+                <circle cx="90" cy="20" r="5" stroke="#9ca3af" stroke-width="1" fill="#ffffff"/>
+                <circle cx="25" cy="60" r="5" stroke="#9ca3af" stroke-width="1" fill="#ffffff"/>
+                <circle cx="95" cy="60" r="4" stroke="#9ca3af" stroke-width="1" fill="#ffffff"/>
+                <circle cx="60" cy="10" r="3" fill="#9ca3af"/>
+                <!-- Deep Connections -->
+                <path d="M33 23 L49 33 M86 23 L70 33 M30 57 L49 47 M91 57 L70 47 M60 14 L60 28" stroke="#9ca3af" stroke-width="0.8" fill="none"/>
+                <path d="M34 20 L85 20 M30 60 L90 60 M27 24 L25 55 M92 24 L95 55" stroke="#d1d5db" stroke-width="0.4" stroke-dasharray="2 2" fill="none"/>
+                <!-- Activity Dots -->
+                <circle cx="41" cy="28" r="1.5" fill="#374151"/>
+                <circle cx="78" cy="28" r="1.5" fill="#374151"/>
+                <circle cx="40" cy="52" r="1.5" fill="#374151"/>
+              </svg>
+            </div>
+            <h3>Analyze</h3>
+            <p>Proprietary AI models — deep learning, graph neural networks, and reinforcement learning — generate forecasts, detect anomalies, and model scenarios.</p>
+          </div>
+        </div>
+
+        <div class="step-item step-item-right reveal-item">
+          <div class="step-marker">
+            <span>4</span>
+          </div>
+          <div class="step-content">
+            <div class="step-illustration">
+              <svg viewBox="0 0 120 80" fill="none">
+                <!-- Detailed Laptop / Dashboard -->
+                <g transform="translate(10, 5)">
+                  <!-- Display -->
+                  <path d="M5 5 L95 5 A2 2 0 0 1 97 7 L97 60 L3 60 L3 7 A2 2 0 0 1 5 5 Z" stroke="#374151" stroke-width="1.2" fill="#ffffff"/>
+                  <rect x="6" y="8" width="88" height="49" fill="rgba(156,163,175,0.05)"/>
+                  <!-- Base -->
+                  <path d="M0 60 L100 60 L98 64 L2 64 Z" fill="#d1d5db"/>
+                  <path d="M2 64 L98 64 L96 66 L4 66 Z" fill="#9ca3af"/>
+                  <rect x="42" y="60" width="16" height="2" fill="#ffffff" opacity="0.6"/>
+                  <!-- UI Sidebar -->
+                  <rect x="6" y="8" width="18" height="49" fill="rgba(156,163,175,0.1)"/>
+                  <line x1="10" y1="15" x2="20" y2="15" stroke="#9ca3af" stroke-width="1"/>
+                  <line x1="10" y1="22" x2="20" y2="22" stroke="#9ca3af" stroke-width="1" opacity="0.5"/>
+                  <line x1="10" y1="29" x2="20" y2="29" stroke="#9ca3af" stroke-width="1" opacity="0.5"/>
+                  <!-- UI Header -->
+                  <line x1="28" y1="16" x2="90" y2="16" stroke="#d1d5db" stroke-width="0.5"/>
+                  <!-- Line Chart -->
+                  <rect x="28" y="20" width="60" height="22" rx="1" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.5"/>
+                  <path d="M30 38 L40 30 L50 33 L60 25 L70 28 L85 18" stroke="#374151" stroke-width="0.8" fill="none"/>
+                  <circle cx="85" cy="18" r="1.5" fill="#374151"/>
+                  <path d="M30 38 L40 30 L50 33 L60 25 L70 28 L85 18 L85 41 L30 41 Z" fill="rgba(156,163,175,0.1)"/>
+                  <!-- Mini widgets -->
+                  <rect x="28" y="46" width="28" height="8" rx="1" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.5"/>
+                  <rect x="30" y="48" width="4" height="4" fill="#9ca3af"/>
+                  <rect x="36" y="50" width="4" height="2" fill="#d1d5db"/>
+                  <rect x="42" y="47" width="4" height="5" fill="#374151"/>
+                  
+                  <rect x="60" y="46" width="28" height="8" rx="1" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.5"/>
+                  <path d="M64 50 A 2 2 0 1 1 68 50 A 2 2 0 1 1 64 50" fill="#9ca3af"/>
+                  <line x1="72" y1="49" x2="84" y2="49" stroke="#d1d5db" stroke-width="1"/>
+                  <line x1="72" y1="52" x2="80" y2="52" stroke="#d1d5db" stroke-width="1"/>
+                </g>
+              </svg>
+            </div>
+            <h3>Deliver</h3>
+            <p>Actionable insights are delivered through our decision intelligence platform — real-time dashboards, APIs, and automated alerts for energy operators.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== USE CASES ===== -->
+  <section class="section section-usecases" id="use-cases">
+    <div class="container">
+      <div class="section-label">Use Cases</div>
+      <h2 class="section-title">Powering decisions<br>across the energy value chain.</h2>
+
+      <div class="usecases-grid">
+        <div class="usecase-card reveal-item">
+          <div class="usecase-illustration">
+            <svg viewBox="0 0 200 120" fill="none">
+              <!-- Sun -->
+              <circle cx="160" cy="25" r="12" stroke="#9ca3af" stroke-width="0.8"/>
+              <line x1="160" y1="8" x2="160" y2="12" stroke="#d1d5db" stroke-width="0.5"/>
+              <line x1="160" y1="38" x2="160" y2="42" stroke="#d1d5db" stroke-width="0.5"/>
+              <line x1="143" y1="25" x2="147" y2="25" stroke="#d1d5db" stroke-width="0.5"/>
+              <line x1="173" y1="25" x2="177" y2="25" stroke="#d1d5db" stroke-width="0.5"/>
+              <!-- Detailed Solar panels -->
+              <g transform="translate(30, 70)">
+                <g transform="translate(0, 0)">
+                  <rect x="0" y="-12" width="28" height="16" rx="1" stroke="#9ca3af" stroke-width="1" fill="rgba(156,163,175,0.05)" transform="rotate(-15)"/>
+                  <line x1="4" y1="-12" x2="18" y2="2" stroke="#d1d5db" stroke-width="0.6"/>
+                  <line x1="12" y1="-14" x2="26" y2="0" stroke="#d1d5db" stroke-width="0.6"/>
+                  <path d="M14 2 L14 14 M6 14 L22 14" stroke="#9ca3af" stroke-width="1.2"/>
+                </g>
+                <g transform="translate(45, 0)">
+                  <rect x="0" y="-12" width="28" height="16" rx="1" stroke="#9ca3af" stroke-width="1" fill="rgba(156,163,175,0.05)" transform="rotate(-15)"/>
+                  <line x1="4" y1="-12" x2="18" y2="2" stroke="#d1d5db" stroke-width="0.6"/>
+                  <line x1="12" y1="-14" x2="26" y2="0" stroke="#d1d5db" stroke-width="0.6"/>
+                  <path d="M14 2 L14 14 M6 14 L22 14" stroke="#9ca3af" stroke-width="1.2"/>
+                </g>
+                <g transform="translate(90, 0)">
+                  <rect x="0" y="-12" width="28" height="16" rx="1" stroke="#9ca3af" stroke-width="1" fill="rgba(156,163,175,0.05)" transform="rotate(-15)"/>
+                  <line x1="4" y1="-12" x2="18" y2="2" stroke="#d1d5db" stroke-width="0.6"/>
+                  <line x1="12" y1="-14" x2="26" y2="0" stroke="#d1d5db" stroke-width="0.6"/>
+                  <path d="M14 2 L14 14 M6 14 L22 14" stroke="#9ca3af" stroke-width="1.2"/>
+                </g>
+              </g>
+              <!-- Ground line -->
+              <line x1="10" y1="110" x2="190" y2="110" stroke="#e5e7eb" stroke-width="0.5"/>
+            </svg>
+          </div>
+          <h3>Solar Farms</h3>
+          <p>Optimize generation forecasting, track panel degradation, and predict maintenance needs using satellite and weather intelligence.</p>
+        </div>
+
+        <div class="usecase-card reveal-item">
+          <div class="usecase-illustration">
+            <svg viewBox="0 0 200 120" fill="none">
+              <!-- Detailed Towers -->
+              <g transform="translate(45, 10)">
+                <path d="M-8 40 L-2 0 L2 0 L8 40" stroke="#9ca3af" stroke-width="1" fill="none"/>
+                <line x1="-3" y1="8" x2="3" y2="8" stroke="#9ca3af" stroke-width="0.8"/>
+                <line x1="-4.5" y1="16" x2="4.5" y2="16" stroke="#d1d5db" stroke-width="0.8"/>
+                <line x1="-6" y1="26" x2="6" y2="26" stroke="#9ca3af" stroke-width="0.8"/>
+                <path d="M-3 8 L4.5 16 L-6 26 L7.5 34" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+                <path d="M3 8 L-4.5 16 L6 26 L-7.5 34" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+                <path d="M-15 8 L15 8" stroke="#374151" stroke-width="1"/>
+                <path d="M-10 16 L10 16" stroke="#374151" stroke-width="1"/>
+                <!-- Insulators -->
+                <circle cx="-15" cy="11" r="1" fill="#9ca3af"/>
+                <circle cx="15" cy="11" r="1" fill="#9ca3af"/>
+              </g>
+              <g transform="translate(145, 10)">
+                <path d="M-8 40 L-2 0 L2 0 L8 40" stroke="#9ca3af" stroke-width="1" fill="none"/>
+                <line x1="-3" y1="8" x2="3" y2="8" stroke="#9ca3af" stroke-width="0.8"/>
+                <line x1="-4.5" y1="16" x2="4.5" y2="16" stroke="#d1d5db" stroke-width="0.8"/>
+                <line x1="-6" y1="26" x2="6" y2="26" stroke="#9ca3af" stroke-width="0.8"/>
+                <path d="M-3 8 L4.5 16 L-6 26 L7.5 34" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+                <path d="M3 8 L-4.5 16 L6 26 L-7.5 34" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+                <path d="M-15 8 L15 8" stroke="#374151" stroke-width="1"/>
+                <path d="M-10 16 L10 16" stroke="#374151" stroke-width="1"/>
+                <!-- Insulators -->
+                <circle cx="-15" cy="11" r="1" fill="#9ca3af"/>
+                <circle cx="15" cy="11" r="1" fill="#9ca3af"/>
+              </g>
+              <!-- Transmission lines -->
+              <path d="M10 21 Q95 28 180 21" stroke="#9ca3af" stroke-width="0.8" fill="none"/>
+              <path d="M30 21 Q95 24 160 21" stroke="#9ca3af" stroke-width="0.8" fill="none" opacity="0.4"/>
+              
+              <!-- Pulse dots on wire -->
+              <circle cx="70" cy="24.5" r="2" fill="#374151" class="pulse-dot"/>
+              <circle cx="120" cy="24" r="2" fill="#374151" class="pulse-dot"/>
+              <circle cx="30" cy="21.5" r="2" fill="#374151" class="pulse-dot"/>
+              <!-- Buildings -->
+              <rect x="155" y="60" width="12" height="25" rx="1" stroke="#d1d5db" stroke-width="0.6" fill="none"/>
+              <rect x="170" y="68" width="10" height="17" rx="1" stroke="#d1d5db" stroke-width="0.6" fill="none"/>
+              <!-- Ground -->
+              <line x1="10" y1="110" x2="190" y2="110" stroke="#e5e7eb" stroke-width="0.5"/>
+            </svg>
+          </div>
+          <h3>Grid Operators</h3>
+          <p>Real-time visibility into grid health, congestion prediction, and demand-supply balancing for transmission and distribution operators.</p>
+        </div>
+
+        <div class="usecase-card reveal-item">
+          <div class="usecase-illustration">
+            <svg viewBox="0 0 200 120" fill="none">
+              <!-- Globe arc -->
+              <path d="M40 90 Q100 20 160 90" stroke="#9ca3af" stroke-width="0.8" fill="none"/>
+              <!-- Atmosphere layers -->
+              <path d="M50 85 Q100 30 150 85" stroke="#d1d5db" stroke-width="0.5" fill="none" stroke-dasharray="3 2"/>
+              <path d="M60 80 Q100 40 140 80" stroke="#e5e7eb" stroke-width="0.5" fill="none" stroke-dasharray="3 2"/>
+              <!-- Warning markers -->
+              <g transform="translate(70, 55)">
+                <path d="M0 -6 L4 2 L-4 2 Z" stroke="#9ca3af" stroke-width="0.8" fill="none"/>
+                <line x1="0" y1="-3" x2="0" y2="0" stroke="#9ca3af" stroke-width="0.6"/>
+              </g>
+              <g transform="translate(130, 55)">
+                <path d="M0 -6 L4 2 L-4 2 Z" stroke="#9ca3af" stroke-width="0.8" fill="none"/>
+                <line x1="0" y1="-3" x2="0" y2="0" stroke="#9ca3af" stroke-width="0.6"/>
+              </g>
+              <!-- Data shield -->
+              <path d="M95 65 Q100 60 105 65 L105 80 Q100 85 95 80 Z" stroke="#9ca3af" stroke-width="0.8" fill="none"/>
+              <!-- Ground -->
+              <line x1="10" y1="110" x2="190" y2="110" stroke="#e5e7eb" stroke-width="0.5"/>
+            </svg>
+          </div>
+          <h3>Climate Resilience</h3>
+          <p>Long-term climate risk assessment and adaptation planning for energy infrastructure, governments, and sustainability programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT ===== -->
+  <section class="section section-impact" id="impact">
+    <div class="container">
+      <div class="section-label">Impact & Projects</div>
+      <h2 class="section-title center">Making measurable impact<br>on energy and climate.</h2>
+
+      <div class="impact-metrics">
+        <div class="metric-card reveal-item">
+          <div class="metric-value" data-target="98">0</div>
+          <div class="metric-suffix">%</div>
+          <div class="metric-label">Forecast Accuracy</div>
+          <div class="metric-bar"><div class="metric-fill" style="--fill: 98%"></div></div>
+        </div>
+        <div class="metric-card reveal-item">
+          <div class="metric-value" data-target="500">0</div>
+          <div class="metric-suffix">MW</div>
+          <div class="metric-label">Assets Monitored</div>
+          <div class="metric-bar"><div class="metric-fill" style="--fill: 70%"></div></div>
+        </div>
+        <div class="metric-card reveal-item">
+          <div class="metric-value" data-target="15">0</div>
+          <div class="metric-suffix">+</div>
+          <div class="metric-label">Enterprise Clients</div>
+          <div class="metric-bar"><div class="metric-fill" style="--fill: 50%"></div></div>
+        </div>
+        <div class="metric-card reveal-item">
+          <div class="metric-value" data-target="12">0</div>
+          <div class="metric-suffix">K</div>
+          <div class="metric-label">Tons CO₂ Saved</div>
+          <div class="metric-bar"><div class="metric-fill" style="--fill: 60%"></div></div>
+        </div>
+      </div>
+
+      <!-- Impact illustration -->
+      <div class="impact-illustration">
+        <svg viewBox="0 0 800 120" fill="none" class="impact-svg">
+          <line x1="0" y1="100" x2="800" y2="100" stroke="#e5e7eb" stroke-width="0.5"/>
+          <!-- Detailed City skyline -->
+          <g transform="translate(100, 45)">
+            <path d="M0 55 L0 15 L12 15 L12 40 L22 40 L22 5 L36 5 L36 20 L48 20 L48 55" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156,163,175,0.05)"/>
+            <rect x="3" y="20" width="2" height="3" fill="#d1d5db"/>
+            <rect x="7" y="20" width="2" height="3" fill="#d1d5db"/>
+            <rect x="25" y="10" width="3" height="3" fill="#d1d5db"/>
+            <rect x="30" y="10" width="3" height="3" fill="#d1d5db"/>
+            <rect x="39" y="25" width="6" height="3" fill="#d1d5db"/>
+          </g>
+          <!-- Detailed Solar farm -->
+           <g transform="translate(280, 80)">
+             <path d="M 0 0 L 12 -4 L 16 2 L 4 6 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156,163,175,0.1)"/>
+             <line x1="6" y1="-2" x2="10" y2="4" stroke="#d1d5db" stroke-width="0.4"/>
+             <path d="M 20 0 L 32 -4 L 36 2 L 24 6 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156,163,175,0.1)"/>
+             <line x1="26" y1="-2" x2="30" y2="4" stroke="#d1d5db" stroke-width="0.4"/>
+             <path d="M 10 8 L 22 4 L 26 10 L 14 14 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156,163,175,0.1)"/>
+             <line x1="16" y1="6" x2="20" y2="12" stroke="#d1d5db" stroke-width="0.4"/>
+           </g>
+          <!-- Detailed Wind farm -->
+          <g transform="translate(480, 56)">
+            <path d="M-1.5 44 L1.5 44 L0.5 0 L-0.5 0 Z" stroke="#9ca3af" stroke-width="0.8" fill="rgba(156,163,175,0.05)"/>
+            <circle cx="0" cy="0" r="1.5" fill="#374151"/>
+            <path d="M0 0 C -2 -6, -3 -10, 0 -10 C 0 -6, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156, 163, 175, 0.2)" transform="rotate(0)"/>
+            <path d="M0 0 C -2 -6, -3 -10, 0 -10 C 0 -6, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156, 163, 175, 0.2)" transform="rotate(120)"/>
+            <path d="M0 0 C -2 -6, -3 -10, 0 -10 C 0 -6, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156, 163, 175, 0.2)" transform="rotate(240)"/>
+          </g>
+          <g transform="translate(515, 66)">
+            <path d="M-1 34 L1 34 L0.5 0 L-0.5 0 Z" stroke="#9ca3af" stroke-width="0.6" fill="rgba(156,163,175,0.05)"/>
+            <circle cx="0" cy="0" r="1" fill="#374151"/>
+            <path d="M0 0 C -1.5 -5, -2.5 -8, 0 -8 C 0 -5, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.4" fill="rgba(156, 163, 175, 0.2)" transform="rotate(30)"/>
+            <path d="M0 0 C -1.5 -5, -2.5 -8, 0 -8 C 0 -5, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.4" fill="rgba(156, 163, 175, 0.2)" transform="rotate(150)"/>
+            <path d="M0 0 C -1.5 -5, -2.5 -8, 0 -8 C 0 -5, 1 0, 0 0 Z" stroke="#9ca3af" stroke-width="0.4" fill="rgba(156, 163, 175, 0.2)" transform="rotate(270)"/>
+          </g>
+          <!-- Connection lines -->
+          <path d="M150 75 Q220 50 300 80" stroke="#9ca3af" stroke-width="0.6" fill="none" stroke-dasharray="2 2"/>
+          <path d="M320 85 Q400 40 480 56" stroke="#9ca3af" stroke-width="0.6" fill="none" stroke-dasharray="2 2"/>
+          <!-- Detailed Data center / AI Engine cluster -->
+          <g transform="translate(620, 60)">
+            <g transform="translate(0, 0)">
+              <!-- Cabinet 1 -->
+              <rect x="0" y="0" width="16" height="35" rx="1" stroke="#374151" stroke-width="1" fill="rgba(255,255,255,1)"/>
+              <rect x="3" y="3" width="10" height="2" fill="#9ca3af"/>
+              <rect x="3" y="7" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="9" r="0.8" fill="#374151"/> <circle cx="11" cy="9" r="0.8" fill="#374151"/>
+              <rect x="3" y="13" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="15" r="0.8" fill="#374151"/> <circle cx="11" cy="15" r="0.8" fill="#374151"/>
+              <rect x="3" y="19" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="21" r="0.8" fill="#374151"/> <circle cx="11" cy="21" r="0.8" fill="#374151"/>
+              <rect x="3" y="25" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="27" r="0.8" fill="#374151"/> <circle cx="11" cy="27" r="0.8" fill="#374151"/>
+              <line x1="3" y1="31" x2="13" y2="31" stroke="#d1d5db" stroke-width="1"/>
+            </g>
+            <g transform="translate(20, 0)">
+              <!-- Cabinet 2 -->
+              <rect x="0" y="0" width="16" height="35" rx="1" stroke="#374151" stroke-width="1" fill="rgba(255,255,255,1)"/>
+              <rect x="3" y="3" width="10" height="2" fill="#9ca3af"/>
+              <rect x="3" y="7" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="9" r="0.8" fill="#374151"/> <circle cx="11" cy="9" r="0.8" fill="#374151"/>
+              <rect x="3" y="13" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="15" r="0.8" fill="#374151"/> <circle cx="11" cy="15" r="0.8" fill="#374151"/>
+              <rect x="3" y="19" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="21" r="0.8" fill="#374151"/> <circle cx="11" cy="21" r="0.8" fill="#374151"/>
+              <rect x="3" y="25" width="10" height="4" fill="rgba(156, 163, 175, 0.1)"/>
+              <circle cx="5" cy="27" r="0.8" fill="#374151"/> <circle cx="11" cy="27" r="0.8" fill="#374151"/>
+              <line x1="3" y1="31" x2="13" y2="31" stroke="#d1d5db" stroke-width="1"/>
+            </g>
+          </g>
+          <path d="M520 66 Q570 50 620 80" stroke="#9ca3af" stroke-width="0.6" fill="none" stroke-dasharray="2 2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section section-team" id="team">
+    <div class="container">
+      <div class="section-label">Team</div>
+      <h2 class="section-title center">The people building<br>tomorrow's energy intelligence.</h2>
+      <p class="section-desc center">A multidisciplinary team of space scientists, AI researchers, and energy domain experts.</p>
+
+      <div class="team-grid">
+        <div class="team-card reveal-item">
+          <div class="team-avatar">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="14" stroke="#9ca3af" stroke-width="1.2"/>
+              <path d="M12 72 Q12 50 40 50 Q68 50 68 72" stroke="#9ca3af" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <h4>Saurabh</h4>
+          <p class="team-role">Founder & CEO</p>
+          <p class="team-bio">Leading BioSky's vision of space-powered energy intelligence.</p>
+        </div>
+        <div class="team-card reveal-item">
+          <div class="team-avatar">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="14" stroke="#9ca3af" stroke-width="1.2"/>
+              <path d="M12 72 Q12 50 40 50 Q68 50 68 72" stroke="#9ca3af" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <h4>AI & Engineering Lead</h4>
+          <p class="team-role">Chief Technology Officer</p>
+          <p class="team-bio">Architecting the platform's AI core and satellite data pipeline.</p>
+        </div>
+        <div class="team-card reveal-item">
+          <div class="team-avatar">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="14" stroke="#9ca3af" stroke-width="1.2"/>
+              <path d="M12 72 Q12 50 40 50 Q68 50 68 72" stroke="#9ca3af" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <h4>Space Systems Lead</h4>
+          <p class="team-role">Head of Remote Sensing</p>
+          <p class="team-bio">Expert in satellite imagery analysis and Earth observation systems.</p>
+        </div>
+        <div class="team-card reveal-item">
+          <div class="team-avatar">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="14" stroke="#9ca3af" stroke-width="1.2"/>
+              <path d="M12 72 Q12 50 40 50 Q68 50 68 72" stroke="#9ca3af" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <h4>Energy Domains Lead</h4>
+          <p class="team-role">Head of Energy Solutions</p>
+          <p class="team-bio">Deep expertise in renewable energy markets and grid operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">Get in Touch</div>
+          <h2 class="section-title">Let's build the future<br>of energy, together.</h2>
+          <p class="contact-desc">Whether you're an energy company, grid operator, or sustainability initiative — we'd love to explore how BioSky can help.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 7L12 13L22 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:saurabh@biosky.tech">saurabh@biosky.tech</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span>New Delhi, India</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 12h20M12 2c2.5 2.5 4 5.5 4 10s-1.5 7.5-4 10c-2.5-2.5-4-5.5-4-10s1.5-7.5 4-10z" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="https://biosky.tech" target="_blank">biosky.tech</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Organization</label>
+              <input type="text" id="company" name="company" placeholder="Company or organization">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+              <ellipse cx="16" cy="16" rx="8" ry="14" stroke="currentColor" stroke-width="1"/>
+              <ellipse cx="16" cy="16" rx="14" ry="8" stroke="currentColor" stroke-width="1"/>
+              <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+            </svg>
+            <span>BioSky</span>
+          </a>
+          <p>Space-powered energy intelligence<br>for a climate-resilient future.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Company</h5>
+            <a href="#about">About</a>
+            <a href="#team">Team</a>
+            <a href="#impact">Impact</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h5>Platform</h5>
+            <a href="#platform">Technology</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#use-cases">Use Cases</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BioSky Space Innovations Pvt. Ltd. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
